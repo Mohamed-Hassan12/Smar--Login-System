@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+         <!-- Background   particles-js -->
+    <section id="particles-js" class="vh-100 bg-dark position-relative w-100">
+
+        <!-- register -->
+        <form class=" container my-5 position-absolute" id="registration">
+            <div>
+                <h1 class=" fw-bold text-primary text-center fs-3 element  text-capitalize pb-5"></h1>
+            </div>
+            <div class="mb-3">
+                <label for="registrationUser" class="form-label text-white fw-bolder">userName</label>
+                <input type="text" class="form-control" id="registrationUser">
+                <p class="text-danger " id="regxName">The first letter should be capital, and the name should not exceed 15 letters</p>
+            </div>
+            <div class="mb-3">
+                <label for="registrationPassword" class="form-label text-white fw-bolder">password</label>
+                <input type="password" class="form-control" id="registrationPassword">
+                <p class="text-danger " id="regxPass">The password must consist of numbers only and be more than 6 numbers</p>
+
+            </div>
+
+            <button type="button" id="butRegistration" class="btn btn-primary ">Submit</button>
+            <p class="text-success text-center pt-4" id="YouhaveAccount">you have an account</p>
+            <p class="text-white fw-bolder py-3 text-center fs-4">you have an account?<a href="#"
+                    class="text-primary text-decoration-none" id="IhaveAccoiunt"> signin</a></p>
+        </form>
+
+
+        <!-- Login -->
+        <form class="container mt-5 position-absolute" id="login">
+            <h1 class=" fw-bold text-primary fs-3 ele-2  text-center text-capitalize pb-5"></h1>
+            <div class="mb-3">
+                <label for="loginUser" class="form-label text-white fw-bolder">userName</label>
+                <input type="text" class="form-control" id="loginUser">
+            </div>
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label text-white fw-bolder">password</label>
+                <input type="password" class="form-control" id="loginPassword">
+                <p id="passErroe" class="text-white">password error</p>
+            </div>
+
+            <button type="button" id="buttonLogin" class="btn btn-primary ">Submit</button>
+            <p id="NotVall" class="text-danger text-center pt-4">Fields must be filled out</p>
+            <p class="text-success " id="YouhaveAccount">you have an account</p>
+            <p class="text-danger fs-4  text-center " id="errorLogin">you dont have an account</p>
+            <p class="text-white text-center fw-bolder pt-3 fs-4">you have an account?<a href="#"
+                    class="text-primary text-decoration-none" id="createAccount"> sign up</a></p>
+        </form>
+
+        <!-- LogOut -->
+        <section class="container " id="Home">
+            <h1 class=" fw-bold text-primary fs-3  text-center text-capitalize pb-5">Welcome To The Home Page</h1>
+            <div class="d-flex"> <button class="btn btn-info" id="buttonLogout">logout</button>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

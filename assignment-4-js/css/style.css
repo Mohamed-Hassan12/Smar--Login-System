@@ -1,0 +1,71 @@
+body{
+    
+    position: relative;
+}
+html{
+    font-size: medium;
+}
+
+#login{
+    display: none;
+}
+#Home{
+    display: none;
+}
+#errorLogin{
+    display: none;
+}
+
+#YouhaveAccount{
+    display: none;
+}
+#regxName{
+    display: none;
+}
+#regxPass{
+    display: none;
+}
+
+#registration ,#login{
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+}
+#butRegistration ,#buttonLogin {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+#eror{
+    display: none;
+}
+#passErroe{
+    display: none;
+}
+#NotVall{
+    display: none;
+}
+.lol{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+@media screen and (max-width: 1070px) {
+    
+        #registration , #login{
+            width: 50%;
+        }
+        
+    
+}
+@media screen and (max-width: 500px) {
+    
+        html{
+            font-size: small;
+        }
+        #registration , #login{
+            width: 80%;
+        }
+        
+    
+}
